@@ -1,0 +1,11 @@
+const zmq = require('zeromq')
+let s = zmq.socket('req')
+s.connect('tcp://localhost:8000')
+s.connect('tcp://localhost:8001')
+//s.send('Alex1')
+//s.send('Alex2')
+s.on('message', (msg) => {
+  console.log('Recibido: '+msg)
+  //s.close()
+})
+ setInterval(() => {s.send('Alex1'); s.send('Alex2')}, 1000)
