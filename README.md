@@ -2,9 +2,9 @@
 
 Implementacion of a middleware with ZeroMQ library for various cases.
 - Broker
-- Chat
+- Simple chat messaging service
 - Client/Server
-- Diffusion
+- Broadcast
 - Pipeline
 
 ZeroMQ; https://zeromq.org/
